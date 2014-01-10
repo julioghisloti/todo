@@ -1,0 +1,5 @@
+http_path = "http://localhost/_todo"
+css_dir = "lib/style"
+sass_dir = "lib/scss"
+images_dir = "lib/img"
+javascripts_dir = "lib/js"

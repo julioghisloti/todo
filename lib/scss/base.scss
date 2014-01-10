@@ -1,0 +1,18 @@
+//-  Base Style - todo
+
+//- Reset
+@import "compass/reset";
+
+//- CSS
+@import "compass/css3";
+
+//- Cores
+$amarelo: #FFB700;
+$cinza1: #EEE;
+$cinza2: #999;
+
+//- Comp
+body{
+	background-color: $cinza1;
+	font-family: sans-serif;
+}

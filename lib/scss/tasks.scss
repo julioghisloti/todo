@@ -1,0 +1,122 @@
+//- Tasks Style - todo
+
+//- base
+@import "base.scss";
+
+//-top
+header{
+	background-color: #fff;
+	border-bottom: 1px solid $cinza1;
+	height: 50px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+
+	@include box-shadow(0px 0px 5px 0px $cinza2);
+
+	.logo{
+		background: url("../img/sprite.png") no-repeat;
+		background-position: 0px -24px;
+		height: 28px;
+		margin-left: auto;
+		margin-right: auto;
+		top: 10px;
+		position: relative;
+		top: 10px;
+		width: 72px;
+	}
+
+	.new-task{
+		background: url("../img/sprite.png") no-repeat;
+		background-position: -29px -1px;
+		height: 14px;
+		position: absolute;
+		right: 15px;
+		top: 18px;
+		width: 14px;
+	}
+
+}
+
+//- Content
+.content{
+	margin-top: 100px;
+	position: relative;
+	width: 100%;
+
+	.task-all{
+
+		.task-option{
+			background-color: $amarelo;
+			display: none;
+			height: 100%;
+			position: absolute;
+			width: 100%;
+			z-index: 9999;
+
+			.task-option-in{
+				height: 30px;
+				margin-left: -50px;
+				margin-top: -15px;
+				left: 50%;
+				position: absolute;
+				top: 50%;
+				width: 100px;
+
+				.done{
+					background: url("../img/sprite.png") no-repeat;
+					background-position: -82px 0px;
+					border: 0;
+					display: block;
+					height: 28px;
+					left: 0;
+					position: absolute;
+					width: 40px;
+				}
+
+				.cancel{
+					background: url("../img/sprite.png") no-repeat;
+					background-position: -93px -32px;
+					border: 0;
+					display: block;
+					height: 29px;
+					position: absolute;
+					right: 0;
+					width: 29px;
+				}
+
+
+			}
+
+		}
+
+		.task{
+			background-color: #fff;
+			border-bottom: 1px solid $cinza1;
+			border-left: 2px solid #fff;
+			padding: 5px 0px 5px 0px;
+			position: relative;
+			width: -webkit-calc(100% - 2px);
+			width: -moz-calc(100% - 2px);
+			width: calc(100% - 2px);
+
+			a, a:visited, a:active{color: #000; text-decoration: none;}
+
+			.task-content{
+				margin-left: 5px;
+
+				h1{font-size: 30px;}
+				p{font-size: 16px; width: 95%;}
+
+			}
+
+		}
+
+		//- Prioridades
+		.importante{border-left: 2px solid #D90000;}
+		.media{border-left: 2px solid #FFBF00;}
+		.normal{border-left: 2px solid #24AD00;}
+
+	}
+
+}

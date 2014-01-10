@@ -1,0 +1,82 @@
+//- Home Style - todo
+
+//- Base
+@import "base.scss";
+
+//- Login
+.login-box{
+	background-color: #fff;
+	border-top: 1px solid $amarelo;
+	display: table;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 15px;
+	padding-bottom: 20px;
+	position: relative;
+	width: 90%;
+	
+	header{
+		border-bottom: 1px solid $cinza1;
+		height: 44px;
+		position: relative;
+		width: 100%;
+
+		.logo{
+			background: url("../img/sprite.png") no-repeat;
+			background-position: 0px -24px;
+			height: 28px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 10px;
+			position: relative;
+			width: 72px;
+		}
+
+	}
+
+	.content{
+		display: table;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 20px;
+		position: relative;
+		width: 90%;
+
+		input[type="text"], input[type="password"], 
+		input[type="email"]{
+			border-bottom: 1px solid $amarelo;
+			border-left: 1px solid $amarelo;
+			border-right: 0;
+			border-top: 0;
+			font-size: 16px;
+			margin-bottom: 15px;
+			padding: 0 0 2px 3px;
+			width: 100%;
+			
+			//- IOS bug
+			@include border-radius(0px !important);
+		}
+
+		.bts{
+			background-color: $cinza2;
+			border: 0;
+			color: #fff;
+			display: block;
+			font-size: 16px;
+			margin: 0;
+			padding: 10px 0px 10px 0px;
+			text-align: center;
+			text-decoration: none;
+			width: 100%;
+
+			//- IOS bug
+			-webkit-appearance: none;
+ 			-webkit-border-radius: 0;
+
+		}
+
+		.login{background-color: $amarelo;}
+
+	}
+
+}
